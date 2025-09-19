@@ -142,6 +142,10 @@ button {
   text-align: left;
   cursor: pointer;
 }
+.contact-subtitle{
+  color:#fff !important;
+  margin-bottom: 10px;
+}
 
 input,
 textarea {
