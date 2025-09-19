@@ -1,0 +1,22 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main  # deploy when you push to main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # works even if you're on Windows locally
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./   # root folder (where your index.html is)
+          publish_branch: gh-pages  # deploy to gh-pages branch
+          user_name: Dehvid
