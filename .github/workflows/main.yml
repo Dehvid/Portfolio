@@ -20,3 +20,4 @@ jobs:
           publish_dir: ./   # root folder (where your index.html is)
           publish_branch: gh-pages  # deploy to gh-pages branch
           user_name: Dehvid
+          user_email: ejikeifeanyi100@gmqil.com
